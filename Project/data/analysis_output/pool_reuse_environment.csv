@@ -1,0 +1,14 @@
+key,value
+python,3.14.7
+platform,Windows-11-10.0.26200-SP0
+logical_cpus,18
+numpy,2.5.5
+pandas,3.1.1
+repeats,10
+start_method,spawn
+fresh_pool_scope,"Startup, transfer, computation, collection, shutdown"
+reused_pool_scope,"Transfer, computation, collection; excludes setup and shutdown"
+excluded,CSV I/O and correctness validation
+setup_scope,Startup plus one full untimed warm-up workload
+baseline,Serial median within the same comparison_workers group
+note,Persistent pool remains idle during serial/fresh measurements
